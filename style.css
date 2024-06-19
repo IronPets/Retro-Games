@@ -50,16 +50,18 @@ nav{
 
 section{
     width: 100%;
-    height:50%;
+    height:70%;
     background-color: #fcfcfc;
+    margin-bottom: 50px;
 }
 
 footer{
     background-color: gray;
     text-align: center;
     width: 100%;
-    height:20px;
-    margin-top:30px;    
+    height:2.5%;
+    margin-top:100px;  
+    position: absolute;  
 }
 
 .play{
@@ -211,6 +213,12 @@ footer{
     border-radius: 10px;
 }
 
+.controlN{
+    height:500px;
+    width:500px;
+    border-radius: 10px;
+}
+
 .jogosG{
     Height:500px;
     width: 400px;
@@ -242,25 +250,23 @@ footer{
 
 .text{
     display:inline-flex;
-    margin-top: 5px;
-    margin-bottom:1px;
+    margin-bottom:110px;
+    margin-top:20px;
     font-size: 15px;
+    position:absolute;
     text-align: justify;
-    margin-top: 30px;
-    margin-right:0px;
-    float:right;
-    width:500px;
-    height:100px;
+    top: 410px;
+    left:40%;
+    width:50%;
 }       
 
 .textT{
     display:flex;
     margin-top: 5px;
-    margin-bottom:1px;
     font-size: 20px;
     text-align: justify;
     margin-top: 30px;
-    margin-right: 500px;
+    margin-right: 450px;
     margin-left: 50px;
     font-weight:bold;
     float:right;
@@ -283,3 +289,90 @@ footer{
     font-size: 22px;
     float:right;
 }
+
+.comprar{
+    display:flex;
+    margin-right: 40%;
+    margin-top: 5px;
+    margin-bottom:0px;
+    font-size: 28px;
+    top:43%;
+    left:42%;
+    position: absolute;
+    color:#ffffff;
+    background-color: #ff7300 ;
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    padding-left: 10px;
+    padding-right:10px;
+    border-radius:9px;
+    box-shadow: 3px 3px 0px #000;
+    text-decoration:none;
+}
+
+.compral{
+    display:flex;
+    margin-right: 25%;
+    margin-top: 5px;
+    margin-bottom:0px;
+    font-size: 28px;
+    float:right;
+}
+
+#little{
+    background-color: gray;
+    text-align: center;
+    width: 100%;
+    height:20px;
+    margin-top:8px;    
+}
+
+.textl{
+    display:inline-flex;
+    margin-bottom:110px;
+    margin-top:20px;
+    font-size: 20px;
+    position:absolute;
+    text-align: justify;
+    top: 410px;
+    left:40%;
+    width:50%;
+}
+
+.compraS{
+    display:flex;
+    margin-right: 22%;
+    margin-top: 5px;
+    margin-bottom:0px;
+    font-size: 28px;
+    float:right;
+}
+
+    
+.foth{
+    background-color: gray;
+    text-align: center;
+    width: 100%;
+    height:20px;
+    margin-top:270px;    
+}
+
+.noMar{
+    background-color: gray;
+    text-align: center;
+    width: 100%;
+    height:20px;
+    margin-top:30px;    
+}
+
+.longt{
+    
+        background-color: gray;
+        text-align: center;
+        width: 100%;
+        height:20px;
+        margin-top:250px;   
+        
+   
+    }  
