@@ -10,3 +10,12 @@ a{
     margin:0px;
 }
 
+nav{
+    display:-ms-inline-flexbox;
+}
+
+h1{
+    text-align: center;
+    margin:10px 0px 0px 0px;
+}
+

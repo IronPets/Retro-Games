@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <img class="logo  transitionRotate" src="assets/logo.jpeg" alt="retro games">      
+       <p class="animationFadein titulo"> Bem Vindo a Retro Games a Maior Loja de Jogos da América Latina. </p>
+        </header>
+    <nav class="calc">
+        <a class="Home transitionSize, calc"  href="index.html" lang="en">Início</a>   
+    </nav>
+    
+   <div class="fundo">
+     <div class="calculadora">
+        <h1>Calculadora</h1>
+        <p id="resultado"></p>
+    
+      <table>
+        <tr>
+            <td><button class="botao" onclick="limpa()">C</button></td>
+            <td><button class="botao" onclick="volta()"><</button></td>
+            <td><button class="botao" onclick="insert('/')">/</button></td>
+            <td><button class="botao" onclick="insert('*')">X</button></td>
+        </tr>
+        <tr>
+            <td><button class="botao" onclick="insert('7')">7</button></td>
+            <td><button class="botao" onclick="insert('8')">8</button></td>
+            <td><button class="botao" onclick="insert('9')">9</button></td>
+            <td><button class="botao" onclick="insert('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="botao" onclick="insert('4')">4</button></td>
+            <td><button class="botao" onclick="insert('5')">5</button></td>
+            <td><button class="botao" onclick="insert('6')">6</button></td>
+            <td><button class="botao" onclick="insert('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="botao"  onclick="insert('1')">1</button></td>
+            <td><button class="botao"  onclick="insert('2')">2</button></td>
+            <td><button class="botao"  onclick="insert('3')">3</button></td>
+            <td rowspan="2"><button id="igual" onclick="calcular()">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="zero" onclick="insert('0')">0</button></td>
+            <td><button class="botao" onclick="insert('.')">.</button></td>
+        </tr>
+      </table> 
+    </div>
+   </div> 
+   <script>
+    function insert(num){
+    var numero = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = numero + num;
+    }
+    function limpa(){
+        document.getElementById('resultado').innerHTML = "";
+    }
+    function volta(){
+        var resultado = document.getElementById('resultado').innerHTML;
+        document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length-1);
+    }
+    function calcular(){
+        var resultado = document.getElementById('resultado').innerHTML;
+        if(resultado){
+            document.getElementById('resultado').innerHTML = eval(resultado);
+        }
+        else{
+            document.getElementById('resultado').innerHTML = "Nada...";
+        }
+    }
+   </script>
+</body>
+</html>
